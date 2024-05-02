@@ -1,0 +1,141 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Instagram Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(-45deg, #f9ce34 0%, #f96934 35%, #ee2a7b 65%, #6228d7 100%);
+            /* background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #login-container {
+            background-color: white;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px #aaa;
+            text-align: center;
+            width: 40%;
+            height: 60%;
+        }
+        .insta_name{
+            width: 30%;
+            padding-top: 5%;
+            padding-bottom: 4%;
+        }
+
+        #login-container input {
+            border: 2px solid rgba(208, 208, 208, 0.686);
+            width: 92%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        #login-container button {
+            background-color: #3897f0;
+            color: white;
+            padding: 10px;
+            width: 92%;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+            margin-top: 3%;
+        }
+
+        #login-container button:hover {
+            background-color: #357ae8;
+        }
+        .or-opt{
+            color: rgba(188, 188, 188, 0.775);
+            font-family: monospace;
+            font-weight: 200;
+            margin-top: 3%;
+        }
+        .facebook-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1%;
+            margin-top: 4%;
+        }
+        .facebook-logo{
+            color: #0c3c88;
+            font-size: 19px;
+        }
+        .fac-heading{
+            color: rgb(47, 47, 47);
+            font-weight: 200;
+        }
+        .forgot-pass{
+            font-weight: 200;
+            color: rgb(100, 100, 100);
+            margin-top: 2%;
+            cursor: pointer;
+        }
+        .login-container-part {
+            background-color: white;
+            border: 1px solid #e6e6e6;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px #aaa;
+            text-align: center;
+            width: 40%;
+            margin-top: 8px;
+        }
+        .dont-acc{
+            font-weight: 200;
+            color: rgb(100, 100, 100);
+        }
+        .sign-up{
+            color: #359de8;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-container">
+        <img src="insta_logo.png" class="insta_name">
+        <input type="text" id="username" placeholder="phone number, Username, or email" required="">
+        <input type="password" id="password" placeholder="Password" required="">
+        <button onclick="login()">Log In</button>
+        <h3 class="or-opt">__________________OR__________________</h3>
+        <div class="facebook-container">
+            <i class="bx bxl-facebook-square facebook-logo"></i>
+            <h4 class="fac-heading">Log in with Facebook</h4>
+        </div>
+        <h5 class="forgot-pass">Forgot password?</h5>
+    </div>
+    <div class=" login-container-part">
+        <h5 class="dont-acc">Don't have an account? <span class="sign-up"> Sign up.</span></h5>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+        
+           if(username=="sagarmasale27@gmail.com" && password=="sag123"){
+            window.location.href = 'instaWeb.html';
+           }
+         else{
+            alert("Please Enter valid information");
+        }
+
+        }
+    </script>
+
+</body></html>
