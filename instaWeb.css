@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 1px solid red;
 }
 .first-Container{
     width: 100%;
@@ -11,15 +12,20 @@
 }
 .Left-Side{
     /* border: 1px solid red; */
-    width: 17%;
+    width: 200px;
     height: 100%;
     position: fixed;
     border-right: 1px solid gray;
 }
+.Right-Side-Box{
+    margin-left: 200px;
+    width: auto;
+    height: fit-content;
+}
 .Right-Side{
     /* border: 1px solid red; */
     width: 100%;
-    height: 100vh;
+    height: fit-content;
    
     /* position: static; */
 }
@@ -87,22 +93,23 @@
 }
 /* mid Side Style */
 .Mid-Page{
-    float: left;
+     /* float: left; */
     /* border: 1px solid; */
-    width: 53%;
-    height: 100vh;
-    margin-left: 21%;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 18%;
    
 }
 .Top-Stories{
     /* border: 1px solid yellow; */
-    width: 100%;
+    width: 75%;
     height: 100px;
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+    gap: 1.7%;
 }
 .Storie-Rings{
     width: 60px;
@@ -143,19 +150,13 @@
 }
 .Post-Rells-Container{
     /* border: 1px solid blue; */
-    width: 70%;
-    height: 100%;
-    margin-left: 15%;
+    width: 450px;
+    height: fit-content;
+    /* margin-left: 15%; */
     margin-top: 3%;
     
 }
-.Right-Side-End-Container{
-    /* border: 1px solid rgb(255, 0, 102); */
-    width: 25.8%;
-    margin-left: auto;
-    height: 60vh;
 
-}
 .profile-name-box{
     display: flex;
     align-items: center;
@@ -218,6 +219,7 @@
     /* border: 1px solid orange; */
     width: 100.1%;
     height: 6.5%;
+    margin-top: 2.7%;
     display: flex;
     align-items: center;
     gap: 2%;
