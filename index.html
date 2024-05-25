@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insta Front page</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
    
 
     <style>
         *{
             margin: 0;
             padding: 0;
+            transition: .2s;
         }
         body{
             width: 100%;
@@ -46,6 +48,53 @@
         .line{
             border: 3px solid white;
             height: 170px;
+        }
+        @media screen and (max-width:785px  ) {
+            .logo{
+                font-size: 130px;
+            }
+            .line{
+                height: 150px;
+            }
+            .logo-name{
+                font-size: 45px;
+            }
+            .right-arrow {
+                margin-right: 10%;
+            }
+        }
+        @media screen and (max-width:526px  ) {
+            .logo{
+                font-size: 120px;
+            }
+            .line{
+                height: 120px;
+            }
+            .logo-name{
+                font-size: 40px;
+            }
+            .right-arrow {
+                margin-right: 10%;
+            }
+        }
+        @media screen and (max-width:350px  ) {
+            .logo{
+                font-size: 100px;
+            }
+            .line{
+                height: 80px;
+            }
+            .logo-name{
+                font-size: 35px;
+            }
+            .right-arrow {
+                font-size: 40px;
+                margin-right: 10%;
+             /* margin-top: -20%; */
+                width: 29px;
+                margin-bottom: 51%;
+
+            }
         }
         
     </style>
